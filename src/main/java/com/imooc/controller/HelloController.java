@@ -28,7 +28,5 @@ public class HelloController {
     @GetMapping(value = "/say")
     public String sayHello(@RequestParam(value="id",required = false,defaultValue = "0") Integer id){
         return "id: "+id;
-    }
-
-    
+    } 
 }
