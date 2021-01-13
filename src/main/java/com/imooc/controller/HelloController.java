@@ -24,9 +24,9 @@ public class HelloController {
     @Autowired
     private GirlProperties girlProperties;
 
-//    @RequestMapping(value = "/say",method = RequestMethod.GET)
     @GetMapping(value = "/say")
     public String sayHello(@RequestParam(value="id",required = false,defaultValue = "0") Integer id){
+        System.out.println("第一天的代码");
         return "id: "+id;
     } 
 }
