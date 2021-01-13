@@ -33,6 +33,7 @@ public class GirlController {
     @GetMapping(value = "/girls")
     public List<Girl> girlList(){
         System.out.println("第二天的代码");
+        System.out.println("第二天的代码");
         loger.info("girlList");
         return girlRepository.findAll();
     }
