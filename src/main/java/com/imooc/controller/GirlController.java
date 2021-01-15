@@ -32,7 +32,7 @@ public class GirlController {
      */
     @GetMapping(value = "/girls")
     public List<Girl> girlList(){
-        System.out.println("第二个commit");
+        System.out.println("提交第二个commit");
         loger.info("girlList");
         return girlRepository.findAll();
     }
