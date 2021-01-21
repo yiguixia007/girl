@@ -27,10 +27,6 @@ public class HelloController {
     @GetMapping(value = "/say")
     public String sayHello(@RequestParam(value="id",required = false,defaultValue = "0") Integer id){
         System.out.println("提交第一个commit");
-        System.out.println("第一天的代码");
-        System.out.println("第一天的代码");
-        System.out.println("完成feature_001的部分代码");
-        System.out.println("完成feature_001的剩余代码");
         return "id: "+id;
     } 
 }
